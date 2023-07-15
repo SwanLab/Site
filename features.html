@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <title>Swan</title>
+  </head>
+  <body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">  
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#"><b>Swan</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#uwual-collapse2" aria-controls="uwual-collapse2" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="uwual-collapse2">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Results</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main>
+    <!-- Hero -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="mix.png" class="d-block mx-lg-auto img-fluid" alt="Optimally designed parts" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-3 fw-bold lh-sm mb-3">Features</h1>
+            <p class="lead">Dive deeper into the modules that make up Swan, the key part of its agile workflow.</p>
+            <div class="pt-3 d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary rounded-pill btn-lg px-4 me-md-2 fw-bold">Contact us</button>
+              <button type="button" class="btn btn-outline-secondary rounded-pill btn-lg px-4">Get the code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- Features -->
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">Quick rundown</h2>
+      <div class="row g-4 py-2 my-3 row-cols-1 row-cols-lg-2">
+        <div class="feature col">
+          <p class="lead fw-bold">
+            How do you represent the domain?
+          </p>
+        </div>
+        <div class="feature col">
+          <p>
+            Swan currently includes 3 methods to represent the domain:
+            <ul>
+              <li> Density-based methods</li>
+              <li> Phase-field methods</li>
+              <li> Level-set (implicit functions)</li>
+            </ul>
+            Each has method has its strengths and weaknesses, and enable different features of the Swan toolbox.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4 py-2 row-cols-1 row-cols-lg-2">
+        <div class="feature col">
+          <p class="lead fw-bold">
+            What can I use Swan for?
+          </p>
+        </div>
+        <div class="feature col">
+          <p>
+            Swan ...
+            <ul>
+              <li> Additive manufacturing</li>
+              <li> Lattice structures</li>
+              <li> Compliant mechanism designs</li>
+            </ul>
+            Check Results...
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4 py-2 row-cols-1 row-cols-lg-2">
+        <div class="feature col">
+          <p class="lead fw-bold">
+            Which constraints can I use?
+          </p>
+        </div>
+        <div class="feature col">
+          <p>
+            So far, Swan includes the following constraints:
+            <ul>
+              <li> Compliance</li>
+              <li> Volume</li>
+              <li> Limiting von Mises stress norm</li>
+              <li> Minimum length scales</li>
+              <li> Overhang angle</li>
+              <li> Perimeter</li>
+              <li> Eigenvalue problems</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Examples -->
+    <div class ="jumbotron bg-dark text-white">
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Examples</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+            <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-green);">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Nyt lähden tanssimaan</h2>
+              Niinku cha cha cha, enkä pelkääkään tätä maailmaa. 
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('cantilever_example.gif');  ">
+            <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-red);">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mä oon tulossa!</h2>
+              Pidän kaksin käsin kiini juomista niinku... 
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('cantilever_example.gif');  ">
+            <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-blue);">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tänään oon se mies</h2>
+              Pidän kaksin käsin kiini juomista niinku... 
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('cantilever_example.gif');  ">
+            <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-dark" style="background-color: var(--bs-yellow);">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tänään oon se mies</h2>
+              Pidän kaksin käsin kiini juomista niinku... 
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('cantilever_example.gif');  ">
+            <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-pink);">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Let me cook</h2>
+              He's on, he's on it... 
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div class="text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-dark">Try it yourself</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">
+            Swan is completely free and open-source, so download the code and start optimizing! Feel free to
+            contact us if you want to add a new feature or are not quite sure how to tackle your problem.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary rounded-pill btn-lg px-4 me-sm-3 fw-bold">Contact us</button>
+            <button type="button" class="btn btn-warning rounded-pill btn-lg px-4">Get the code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</main>
+
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">I'm bidin' time until I take you on <br/> my lords and ladies, I will prevail <br/> I cannot fail </br> 'cos I spy</span>
+  </div>
+</footer>
+
+  </body>
+</html>
