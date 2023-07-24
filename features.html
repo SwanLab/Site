@@ -63,6 +63,28 @@
     <!-- Features -->
     <div class="container px-4 py-5" id="featured-3">
       <h2 class="pb-2 border-bottom">Quick rundown</h2>
+      
+
+      <div class="row g-4 py-2  my-3 row-cols-1 row-cols-lg-2">
+        <div class="feature col">
+          <p class="lead fw-bold">
+            What can I use Swan for?
+          </p>
+        </div>
+        <div class="feature col">
+          <p>
+            Swan's versatility means that it can have as many uses as you can imagine. Here are
+            some examples that have motivated previous developments of the code:
+            <ul>
+              <li> Additive manufacturing</li>
+              <li> Lattice structures</li>
+              <li> Compliant mechanism designs</li>
+            </ul>
+            Check the <a class="" href="results.html">Results</a> section for additional examples.
+          </p>
+        </div>
+      </div>
+
       <div class="row g-4 py-2 my-3 row-cols-1 row-cols-lg-2">
         <div class="feature col">
           <p class="lead fw-bold">
@@ -77,31 +99,28 @@
               <li> Phase-field methods</li>
               <li> Level-set (implicit functions)</li>
             </ul>
-            Each has method has its strengths and weaknesses, and enable different features of the Swan toolbox.
           </p>
         </div>
       </div>
 
-      <div class="row g-4 py-2 row-cols-1 row-cols-lg-2">
+      <div class="row g-4 py-2 my-3 row-cols-1 row-cols-lg-2">
         <div class="feature col">
           <p class="lead fw-bold">
-            What can I use Swan for?
+            Which optimizers can I use?
           </p>
         </div>
         <div class="feature col">
           <p>
-            Swan ...
+            Well, that depends on the way you represent your domain:
             <ul>
-              <li> Additive manufacturing</li>
-              <li> Lattice structures</li>
-              <li> Compliant mechanism designs</li>
+              <li> <b>Density-based</b>: Projected Gradient, MMA, Interior Point Method, Augmented Lagrangian, Null Space</li>
+              <li> <b>Level-set</b>: SLERP, Projected SLERP, Hamilton-Jacobi, Augmented Lagrangian, Null Space</li>
             </ul>
-            Check Results...
           </p>
         </div>
       </div>
 
-      <div class="row g-4 py-2 row-cols-1 row-cols-lg-2">
+      <div class="row g-4 py-2 my-3 row-cols-1 row-cols-lg-2">
         <div class="feature col">
           <p class="lead fw-bold">
             Which constraints can I use?
@@ -150,22 +169,29 @@
         <div class="collapse" id="app1" data-bs-parent="#myyyy">
           <div class="card card-body text-dark">
             <div class="container px-4" id="featured-31">
-              <div class="row g-4 py-2 my-3 row-cols-1 row-cols-lg-2">
+              <div class="container row g-4 py-2 my-3 row-cols-1 row-cols-lg-2">
                 <div class="feature col">
                   <p>
                     Using Swan’s ﬂexibility, the manufacturability of the
                     optimal designs can be guaranteed:
                     <ul>
-                      <li> Usage of perimeter constraints</li>
-                      <li> Avoid formation of small beams in the obtained solution</li>
-                      <li> Minimum lengths controlled by the user</li>
+                      <li> Usage of <b>perimeter</b> and <b>minimum-length-scale constraints</b> to avoid formation
+                        of small beams in the obtained solution</li>
+                      <li> Usage of <b>anisotropic perimeter</b> to limit the <b>overhang</b> of the solution for
+                        additive manufacturing
+                        </li>
                     </ul>
-                    bla bla bla
+                    These designs are also easily exportable, making Swan the ideal toolbox to design your pieces
+                    and 3D-print them directly.
                   </p>
                 </div>
-                <div class="feature col">
+                <div class="feature col ps-5">
                   <p class="lead fw-bold text-end">
-                    foto de manuf
+                    <figure class="figure">
+                      <img src="features/hero-additivemanufacturing.png" class="figure-img img-fluid rounded d-block mx-lg-auto"  width="200" height="500" loading="lazy" alt="...">
+                      <figcaption class="figure-caption">Effect of limiting the minimum length
+                        scale on the final optimized result.</figcaption>
+                    </figure>                    
                   </p>
                 </div>
               </div>
@@ -177,7 +203,7 @@
         <div class="collapse" id="app2" data-bs-parent="#myyyy">
           <div class="card card-body text-dark">
             <div class="container px-4" id="featured-31">
-              <div class="row g-4 py-2 my-3 row-cols-1 row-cols-lg-2">
+              <div class="container row g-4 py-2 my-3 row-cols-1 row-cols-lg-2">
                 <div class="feature col">
                   <p>
                   Swan can dehomogenize optimal solutions in order to
@@ -188,12 +214,15 @@
                     <li> Usage of implicit functions</li>
                     <li> Manufacturability ensured through constraints</li>
                   </ul>
-                  bla bla bla
                 </p>
                 </div>
-                <div class="feature col">
+                <div class="feature col ps-5">
                   <p class="lead fw-bold text-end">
-                    foto de latt
+                    <figure class="figure">
+                      <img src="features/hero-lattice.png" class="figure-img img-fluid rounded d-block mx-lg-auto"  width="500" height="500" loading="lazy" alt="...">
+                      <figcaption class="figure-caption">
+                        Lattice structures optimally designed for lightweight applications.</figcaption>
+                    </figure>                    
                   </p>
                 </div>
               </div>
