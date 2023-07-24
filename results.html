@@ -60,23 +60,23 @@
         </div>
       </div>
 
-      <!-- Results -->
+      <!-- CANTILEVER -->
       <div class ="jumbotron">
         <div class="container px-4 py-5" id="custom-cards">
           <h2 class="pb-2 border-bottom">Cantilever optimization</h2>
     
           <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
             <div class="col">
-              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/cantilever/defaultexample.gif'); background-size:contain">
                 <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-green);">
                   <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Simple Level-Set</h2>
-                  Niinku cha cha cha, enkä pelkääkään tätä maailmaa. 
+                  Optimization of a cantilever beam with no additional constraints. 
                 </div>
               </div>
             </div>
     
             <div class="col">
-              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('cantilever_example.gif');  ">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/cantilever/compliance.gif'); background-size:contain ">
                 <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-red);">
                   <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Compliance</h2>
                   See how adding an additional compliance constraint affects the final result.
@@ -85,7 +85,7 @@
             </div>
     
             <div class="col">
-              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('cantilever_example.gif');  ">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/cantilever/isotropy.gif'); background-size:contain ">
                 <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-blue);">
                   <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Isotropy</h2>
                   See how adding an additional isotropy constraint affects the final result. 
@@ -94,10 +94,19 @@
             </div>
     
             <div class="col">
-              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('cantilever_example.gif');  ">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/cantilever/anisotropy.gif'); background-size:contain ">
                 <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-dark" style="background-color: var(--bs-yellow);">
                   <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Anisotropy</h2>
                   See how adding an additional anisotropy constraint affects the final result.
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/cantilever/cantilever_3d.gif'); background-size:contain ">
+                <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-cyan);">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">3D</h2>
+                  See how adding an additional isotropy constraint affects the final result. 
                 </div>
               </div>
             </div>
@@ -106,26 +115,82 @@
         </div>
         </div>
 
-        <!-- Results -->
+        <!-- MATERIAL -->
+      <div class ="jumbotron">
+        <div class="container px-4 py-5" id="custom-cards">
+          <h2 class="pb-2 border-bottom">Material design</h2>
+    
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/materials/negpoisson.gif'); background-size:contain">
+                <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-green);">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Metamaterials</h2>
+                  Design of a material with a negative Poisson's ratio. 
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/materials/gripping_example.gif'); background-size:contain ">
+                <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-red);">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Compliant mechanisms</h2>
+                  Design of a gripping mechanism.
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/materials/bulkconstraint.gif'); background-size:contain ">
+                <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-blue);">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bulk load</h2>
+                  Design of a material under a bulk load constraint. 
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/materials/shear.gif'); background-size:contain ">
+                <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-dark" style="background-color: var(--bs-yellow);">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Shear load</h2>
+                  Design of a material under a shear load constraint.
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/materials/shearload.gif'); background-size:contain ">
+                <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-cyan);">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Shear and bulk loads</h2>
+                  Design of a material under both a shear load and a bulk load. 
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        </div>
+
+
+        <!-- COOL STUFF -->
         <div class ="jumbotron">
           <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom">Whatever</h2>
+            <h2 class="pb-2 border-bottom">Cool stuff</h2>
       
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
               <div class="col">
-                <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/coolstuff/additivemanufacturing.png'); background-size:contain">
                   <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-green);">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Simple Level-Set</h2>
-                    Niinku cha cha cha, enkä pelkääkään tätä maailmaa. 
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Additive manufacturing</h2>
+                    Result of 3D printing Swan-generated material. 
                   </div>
                 </div>
               </div>
       
               <div class="col">
-                <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('cantilever_example.gif');  ">
+                <div class="card-flip card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('results/coolstuff/dehomogenization.png'); background-size:contain ">
                   <div class="card-front d-flex flex-column h-100 p-5 pb-3 mb-4 text-white text-shadow-1" style="background-color: var(--bs-red);">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Compliance</h2>
-                    See how adding an additional compliance constraint affects the final result.
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Lattice structures</h2>
+                    Dehomogezination of lattice structures from a homogenized solution.
                   </div>
                 </div>
               </div>
@@ -133,7 +198,6 @@
             </div>
           </div>
           </div>
-
 
     <!-- Contact -->
 
